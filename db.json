@@ -1,0 +1,28 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "text": "Doctors",
+      "day": "Today",
+      "reminder": false
+    },
+    {
+      "id": 2,
+      "text": "Dentist",
+      "day": "Today",
+      "reminder": true
+    },
+    {
+      "id": 3,
+      "text": "Biking",
+      "day": "Today",
+      "reminder": false
+    },
+    {
+      "text": "bike",
+      "day": "friday",
+      "reminder": false,
+      "id": 4
+    }
+  ]
+}
