@@ -1,0 +1,19 @@
+
+  \{^_^}/ hi!
+
+  Loading db.json
+  Done
+
+  Resources
+  http://172.26.4.39:5000/tasks
+
+  Home
+  http://172.26.4.39:5000
+
+  Type s + enter at any time to create a snapshot of the database
+  Error, can't read from stdin
+  Creating a snapshot from the CLI won't be possible
+[0mGET /tasks [36m304[0m 8.564 ms - -[0m
+[0mGET /tasks [36m304[0m 2.492 ms - -[0m
+[0mGET /tasks/%60 [33m404[0m 3.824 ms - 2[0m
+[0mGET /tasks/1 [32m200[0m 3.065 ms - 73[0m
