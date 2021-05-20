@@ -22,21 +22,21 @@ const App2 = () => {
     getTasks();
   }, []);
   const fetchTasks = async () => {
-    const res = await fetch("http://gadob.com/tasks");
+    const res = await fetch("https://gadob.com/tasks");
     const data = await res.json();
 
     return data;
   };
 
     const fetchTask = async (id) => {
-      const res = await fetch(`http://gadob.com/tasks/${id}`);
+      const res = await fetch(`https://gadob.com/tasks/${id}`);
       const data = await res.json();
 
       return data;
     };
 
   const deleteTask = async(id) => {
-    await fetch(`http://gadob.com/tasks/${id}`, { method: "DELETE" });
+    await fetch(`https://gadob.com/tasks/${id}`, { method: "DELETE" });
     setTasks(tasks.filter((task) => task.id !== id));
   };
 
@@ -44,7 +44,7 @@ const App2 = () => {
     const taskToToggle = await fetchTask(id);
     const updTask = { ...taskToToggle, reminder: !taskToToggle.reminder};
 
-    const res = await fetch(`http://gadob.com/tasks/${id}`, {
+    const res = await fetch(`https://gadob.com/tasks/${id}`, {
       method: "PUT",
       headers: { "Content-type": "application/json" },
       body: JSON.stringify(updTask),
@@ -58,7 +58,7 @@ const App2 = () => {
     );
   };
   const addTask = async (task) => {
-    const res = await fetch("http://gadob.com/tasks", {
+    const res = await fetch("https://gadob.com/tasks", {
       method: "POST",
       headers: {
         "Content-type": "application/json",
